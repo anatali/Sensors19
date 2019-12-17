@@ -1,0 +1,266 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <!--
+<link rel="stylesheet" type="text/css" href="../css/issStyle1.css">
+<script type="text/javascript" src="../css/issStyle.js"></script>
+-->
+ 
+<SCRIPT SRC='https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML'></SCRIPT>
+<SCRIPT>MathJax.Hub.Config({ tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}})</SCRIPT>
+
+
+
+<style type="text/css">
+<!--
+
+body
+{
+    margin-left:  30px;
+    margin-right: 30px;
+};
+
+P
+{
+    font-family: Tahoma;
+    font-size: 10pt;
+};
+
+a, a:visited, a:active, a:link, a:hover {
+    text-decoration: underline;
+    color: #545454;
+    background-color: transparent;
+}
+
+a:hover {
+    background-color: #cccccc;
+}
+
+
+hr {
+    clear: both;
+    height: 1px;
+    color: #242424;
+    background-color: transparent;
+}
+
+h1, h2, h3 {
+    color: #242424;
+    clear: left;
+    font: 100% Tahoma, Helvetica, Arial, sans-serif;
+    margin: 10;
+    margin-right: 15px;
+    margin-bottom: 0.5em;
+    padding-top: 0.5em;
+    border-bottom: 1px solid #242424;
+}
+
+h1 {
+    font-size: 150%;
+    background-color: #b2c0ff;
+}
+
+h2 {
+    background-color: #d9fbff;
+    font-size: 110%;
+}
+
+h3 {
+	background-color: #e6ccff;
+    font-size: 80%;
+}
+h4 {
+    background-color: #99ffcc;
+    font-size: 100%;
+}
+#i {
+    color: #ff1010;
+}
+tt{
+	font-family: "Arial";
+    font-size: 80%;
+	color: #006600;
+}
+em{
+	font-family: "Arial";
+    font-size: 80%;
+	font-weight: bold;
+	border-style:solid;
+	border-color: #ccffff;
+    color: #0033cc;
+}
+bc{
+	font-family: "Arial";
+	font-size: 80%;
+	font-weight: bold;
+    color: #990000;
+	background-color: #fcf8c7;
+}
+k{
+	font-family: "Arial";
+	font-weight: bold;
+    color: #990000;
+	 
+}
+ks{
+	font-family: "Arial";
+	font-weight: bold;
+    color: #0000CD	;
+	 
+}
+kc{
+	font-family: "Arial";
+	font-weight: bold;
+    color: #008000	;
+	 
+}
+pre{
+	font-family: "Helvetica";
+	font-size: 70%;
+	background-color: #fcf8c7; 
+}
+m{
+	font-family: "Helvetica";
+	line-height: 100%;
+ 	font-size: 75%;
+}
+div.body{
+	width: 800px;
+    font-size: 18px;
+}    
+div.req{
+	background-color: #d9ffb3;
+    font-size: 18px;
+	width: 700px;
+    border: 3px solid green;
+    padding: 15px;
+    margin: 10px;
+}    
+div.remark{
+	background-color: #FFFC33;     
+    border: 3px solid green;
+    padding: 15px;
+    margin: 10px;
+}  
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+  -->
+</style>
+    
+<head>
+   
+<title>LabSensorsISS</title></head>
+    
+<body>
+
+<div class="body"> 
+
+<h1>72939 - LABPSensors | Android sensors</h1> 
+<a href="http://htmlpreview.github.com/?https://github.com/anatali/iss2019Lab/blob/master/LectureBologna1819.html" target="isslm">
+LabISS-lectures site</a></font> 
+ 
+
+<h2>aaa</h2> 
+<ol>
+<li>Open the project in android studio and go to File -> Settings -> Version Control -> Git.</li>
+<li>Click on test button to test "path to Git executables". If successful message is shown everything is ok, else navigate to git.exe 
+from where you installed git and test again.</li>
+<li>Go to File -> Settings -> Version Control -> GitHub. Enter your email and password used to create GitHub account and click on OK button.</li>
+<li>Then go to VCS -> Import into Version Control -> Share Project on GitHub. Enter Repository name, Description and click Share button.</li>
+<li>In the next window check all files in order to add files for initial commit and click OK.</li>
+<li>Now the project will be uploaded to the GitHub repository and when uploading is finished we will get a message in android studio 
+showing "Successfully shared project on GitHub". Click on the link provided in that message to go to GitHub repository.</li>
+</ol>
+ 
+ <br/><br/>
+<table style="width:98%">
+<tbody>	
+<tr>
+<td style="width:30%" ><m> 
+<h3>Starting</h3>
+<ol>
+<li>Select NewProject BasicActivity.<br/><br/></li>
+<li>Project name: <i>android.unibo.it.sensors2019</i></li>
+</ol>
+
+</m>
+</td>
+<td>
+<img src="./img/android1.png" alt="android1" width="100%" />
+</td>
+</tr>
+
+<tr>
+<td style="width:30%" ><m> 
+<h3>Dependencies</h3>
+<ol>
+<li>Define <a href="../build.gradle" target="code"><k>build.gradle</k></a>
+of the <tt>Module app</tt>.<br/><br/></li>
+ 
+</ol>
+
+</m>
+</td>
+<td>
+<img src="./img/android2.png" alt="android2" width="100%" />
+</td>
+</tr>
+
+<tr>
+<td style="width:30%" ><m> 
+<h3>Layout</h3>
+<ol>
+<li>Define strings  <a href="../src/main/res/values/strings.xml" target="code">src/main/res/values/<k>strings.xml</k></a> .<br/><br/></li>
+<li>Define constants  <a href="../src/main/res/values/dimens.xml" target="code">src/main/res/values/<k>dimens.xml</k></a> .<br/><br/></li>
+<li>Define the layout (and see Preview): <a href="../src/main/res/layout/content_main.xml" target="code">src/main/res/layout/<k>content_main.xml</k></a> .<br/><br/></li>
+
+</ol>
+
+
+ </ol>
+
+</m>
+</td>
+<td>
+<img src="./img/android3.png" alt="android3" width="100%" />
+</td>
+</tr>
+
+
+<tr>
+<td style="width:30%" ><m> 
+ 
+
+<h3>Main activity</h3>
+<ol>
+<li>Define a  <a href="../src/main/java/android/unibo/it/sensors19/MqttUtils.kt" target="code"><k>MqttUtils.kt</k></a> .<br/><br/></li>
+<li>Define the code of the <a href="../src/main/java/android/unibo/it/sensors19/MainActivity.kt" target="code"><k>MainActivity.kt</k></a> .<br/><br/></li>
+
+</ol>
+
+</m>
+</td>
+<td>
+<img src="./img/android2.png" alt="android3" width="100%" />
+</td>
+</tr>
+
+
+</tbody>
+</table>
+
+<h2>Showing the sensor values</h2>
+
+Launch the jupyter notbook:   <a href="./mqttPlotQakEvents.ipynb" target="code">mqttPlotQakEvents.ipynb</a> <m><ks></ks></m>
+<br/>
+
+
+<br/><br/> 
+</div>
+<div style="background-color:rgba(86, 56, 253, 0.9); width:100%;text-align:center;font-size:small;color:white">
+By AN Unibo-DISI    
+</div> 
+</body>
+</html>
